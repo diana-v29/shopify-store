@@ -44,24 +44,17 @@
                         </div>
                       </a>
                     {% endfor %}
-
-
-
                   </div>
                 </div>
               </div>
             </div>
-
-
           {% else %}
             <div class="relative">
               <a href="{{ link.url }}" class="text-base text-gray-500 hover:text-gray-900">{{ link.title }}</a>
             </div>
           {% endif %}
-
         {% endfor %}
       </nav>
-
 
       <div class="hidden md:flex items-center justify-end md:flex-1 space-x-5">
         <a href="{{ routes.cart_url}}" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900">
@@ -72,8 +65,6 @@
         <a href="{{ routes.account_login_url}}" class="text-base text-gray-500 hover:text-gray-900">Login</a>
         <a href="{{ routes.account_register_url}}" class="text-base text-gray-500 hover:text-gray-900">Register</a>
        {% endif %}
-
-      
       </div>
     </div>
   </div>
@@ -113,23 +104,16 @@
                         <a href="#" class="-m-3 p-3 mt-2 flex items-center rounded-md text-gray-500 hover:text-gray-900 hover:bg-gray-50">
                             <span class="ml-3 text-base font-medium text-gray-500">{{childlink.title}}</span>
                         </a>
-                   
+                  
                     {% endfor %}
                 </div> 
             </div>
               {% else %} 
                 <a href="#" class="-m-3 p-3 flex items-center rounded-md text-gray-500 hover:text-gray-900 hover:bg-gray-50">
                   {{ link.title }}
-
                 </a>
-
               {% endif %}
             {% endfor %}
-
-
-
-            
-              
             </div>
           </nav>
         </div>
@@ -147,7 +131,7 @@
                 "type": "text",
                 "id": "mobile_menu_title",
                 "label": "Title", 
-                "default": "menu",
+                "default": "main_menu",
                 "info": "This is menu"
             },
              {
